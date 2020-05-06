@@ -15,7 +15,13 @@ class DataManager: NSObject {
     static var backUpDataString:String = ""
     static var lastConfirmed:String! = "Loading"
     
-    static var regions:[String]! = ["Afghanistan", "Algeria", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahrain", "Belarus", "Belgium", "Brazil", "Cambodia", "Canada", "Chile", "China", "Croatia", "Czech Republic", "Denmark", "Dominican Republic", "Ecuador", "Egypt", "Estonia", "Finland", "France", "Georgia", "Germany", "Greece", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Japan", "Jordan", "Kuwait", "Latvia", "Lebanon", "Lithuania", "Luxembourg", "Malaysia", "Mexico", "Monaco", "Morocco", "Nepal", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Oman", "Others", "Pakistan", "Philippines", "Portugal", "Qatar", "Romania", "Russia", "San Marino", "Saudi Arabia", "Senegal", "Singapore", "South Korea", "Spain", "Sri Lanka", "Sweden", "Switzerland", "Thailand", "UK", "US", "Ukraine", "United Arab Emirates", "Vietnam"]
+    static var regions:[String]! = ["Afghanistan", "Algeria", "Andorra", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahrain", 
+    "Belarus", "Belgium", "Brazil", "Cambodia", "Canada", "Chile", "China", "Croatia", "Czech Republic", "Denmark", "Dominican Republic", "Ecuador", 
+    "Egypt", "Estonia", "Finland", "France", "Georgia", "Germany", "Greece", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", 
+    "Israel", "Italy", "Japan", "Jordan", "Kuwait", "Latvia", "Lebanon", "Lithuania", "Luxembourg", "Malaysia", "Mexico", "Monaco", "Morocco", 
+    "Nepal", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Oman", "Others", "Pakistan", "Philippines", "Portugal", 
+    "Qatar", "Romania", "Russia", "San Marino", "Saudi Arabia", "Senegal", "Singapore", "South Korea", "Spain", "Sri Lanka", "Sweden", 
+    "Switzerland", "Thailand", "UK", "US", "Ukraine", "United Arab Emirates", "Vietnam"]
     
     static func getRegions() {
         let task = URLSession.shared.dataTask(with: Config.urlConfirmed!) {(data, response, error) in
